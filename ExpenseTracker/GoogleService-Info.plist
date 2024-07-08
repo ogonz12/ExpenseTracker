@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC9U4lb1wDglGdG3d86k820fS3rtWdWTFg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>476675767523</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>orlando.ExpenseTracker</string>
+	<key>PROJECT_ID</key>
+	<string>expensetracker-b80a0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>expensetracker-b80a0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:476675767523:ios:3d0ffc4dee949a079c19d6</string>
+</dict>
+</plist>
