@@ -1,3 +1,10 @@
+//
+//  NewAccountView.swift
+//  ExpenseTracker
+//
+//  Created by Orlando Gonzalez on 7/3/24.
+//
+
 import SwiftUI
 import FirebaseAuth
 
@@ -20,7 +27,7 @@ struct NewAccountView: View {
             
             VStack {
                 Spacer()
-                Text("Create new account")
+                Text("Create New Account")
                     .font(.largeTitle)
                     .bold()
                     .padding()
@@ -61,7 +68,7 @@ struct NewAccountView: View {
                         Text("Cancel")
                             .foregroundColor(.white)
                             .bold()
-                            .frame(width: 140, height: 50)
+                            .frame(width: 130, height: 50)
                             .background(Color.gray)
                             .cornerRadius(10)
                             
@@ -82,7 +89,7 @@ struct NewAccountView: View {
                         Text("Create Account")
                             .foregroundColor(.white)
                             .bold()
-                            .frame(width: 140, height: 50)
+                            .frame(width: 150, height: 50)
                             .background(Color.blue)
                             .cornerRadius(10)
                     }
