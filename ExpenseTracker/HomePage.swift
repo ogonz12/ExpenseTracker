@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomePage.swift
 //  ExpenseTracker
 //
 //  Created by Orlando Gonzalez on 7/3/24.
@@ -16,7 +16,7 @@ struct HomePage: View {
             Text("Recents")
                 .tag(Tab.recents)
                 .tabItem { Tab.recents.tabContent }
-            Text("Search")
+            Text("Search,")
                 .tag(Tab.search)
                 .tabItem { Tab.search.tabContent }
             Text("Chart")

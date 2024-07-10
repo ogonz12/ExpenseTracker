@@ -10,9 +10,8 @@
 		503670782C3C7CE20080B383 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670772C3C7CE20080B383 /* Model.swift */; };
 		5036707A2C3C80C10080B383 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670792C3C80C10080B383 /* LoginPage.swift */; };
 		5036707D2C3C84330080B383 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5036707C2C3C84330080B383 /* FirebaseAuth */; };
-		5036707F2C3C858D0080B383 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5036707E2C3C858D0080B383 /* GoogleService-Info.plist */; };
 		503670812C3C86F50080B383 /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670802C3C86F50080B383 /* NewAccountView.swift */; };
-		503670832C3C95080080B383 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670822C3C95080080B383 /* ForgotPasswordView.swift */; };
+		503670832C3C95080080B383 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670822C3C95080080B383 /* ResetPasswordView.swift */; };
 		50CF3ECD2C359E1B0084DD5C /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF3ECC2C359E1B0084DD5C /* ExpenseTrackerApp.swift */; };
 		50CF3ECF2C359E1B0084DD5C /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF3ECE2C359E1B0084DD5C /* HomePage.swift */; };
 		50CF3ED12C359E1B0084DD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CF3ED02C359E1B0084DD5C /* Assets.xcassets */; };
@@ -20,6 +19,9 @@
 		50CF3EDE2C359E1B0084DD5C /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF3EDD2C359E1B0084DD5C /* ExpenseTrackerTests.swift */; };
 		50CF3EE82C359E1C0084DD5C /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF3EE72C359E1C0084DD5C /* ExpenseTrackerUITests.swift */; };
 		50CF3EEA2C359E1C0084DD5C /* ExpenseTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF3EE92C359E1C0084DD5C /* ExpenseTrackerUITestsLaunchTests.swift */; };
+		50E03BD42C3DEDBA00EF02F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */; };
+		50E03BD72C3DF0B700EF02F5 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 50E03BD62C3DF0B700EF02F5 /* GoogleSignIn */; };
+		50E03BE62C3E027700EF02F5 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 50E03BE52C3E027700EF02F5 /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +44,8 @@
 /* Begin PBXFileReference section */
 		503670772C3C7CE20080B383 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		503670792C3C80C10080B383 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
-		5036707E2C3C858D0080B383 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		503670802C3C86F50080B383 /* NewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
-		503670822C3C95080080B383 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		503670822C3C95080080B383 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		50CF3EC92C359E1B0084DD5C /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CF3ECC2C359E1B0084DD5C /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		50CF3ECE2C359E1B0084DD5C /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -55,6 +56,8 @@
 		50CF3EE32C359E1C0084DD5C /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CF3EE72C359E1C0084DD5C /* ExpenseTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITests.swift; sourceTree = "<group>"; };
 		50CF3EE92C359E1C0084DD5C /* ExpenseTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		50E03BD82C3DF0ED00EF02F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E03BE62C3E027700EF02F5 /* GoogleSignInSwift in Frameworks */,
 				5036707D2C3C84330080B383 /* FirebaseAuth in Frameworks */,
+				50E03BD72C3DF0B700EF02F5 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +119,13 @@
 		50CF3ECB2C359E1B0084DD5C /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				50E03BD82C3DF0ED00EF02F5 /* Info.plist */,
 				50CF3ECC2C359E1B0084DD5C /* ExpenseTrackerApp.swift */,
 				50CF3ECE2C359E1B0084DD5C /* HomePage.swift */,
 				503670802C3C86F50080B383 /* NewAccountView.swift */,
 				503670792C3C80C10080B383 /* LoginPage.swift */,
-				503670822C3C95080080B383 /* ForgotPasswordView.swift */,
-				5036707E2C3C858D0080B383 /* GoogleService-Info.plist */,
+				503670822C3C95080080B383 /* ResetPasswordView.swift */,
+				50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */,
 				503670742C3C7CA20080B383 /* Model */,
 				50CF3ED02C359E1B0084DD5C /* Assets.xcassets */,
 				50CF3ED22C359E1B0084DD5C /* Preview Content */,
@@ -170,6 +176,8 @@
 			name = ExpenseTracker;
 			packageProductDependencies = (
 				5036707C2C3C84330080B383 /* FirebaseAuth */,
+				50E03BD62C3DF0B700EF02F5 /* GoogleSignIn */,
+				50E03BE52C3E027700EF02F5 /* GoogleSignInSwift */,
 			);
 			productName = ExpenseTracker;
 			productReference = 50CF3EC92C359E1B0084DD5C /* ExpenseTracker.app */;
@@ -245,6 +253,7 @@
 			mainGroup = 50CF3EC02C359E1B0084DD5C;
 			packageReferences = (
 				5036707B2C3C83FA0080B383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				50E03BD52C3DF0B600EF02F5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 50CF3ECA2C359E1B0084DD5C /* Products */;
 			projectDirPath = "";
@@ -264,7 +273,7 @@
 			files = (
 				50CF3ED42C359E1B0084DD5C /* Preview Assets.xcassets in Resources */,
 				50CF3ED12C359E1B0084DD5C /* Assets.xcassets in Resources */,
-				5036707F2C3C858D0080B383 /* GoogleService-Info.plist in Resources */,
+				50E03BD42C3DEDBA00EF02F5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +302,7 @@
 				503670782C3C7CE20080B383 /* Model.swift in Sources */,
 				50CF3ECF2C359E1B0084DD5C /* HomePage.swift in Sources */,
 				503670812C3C86F50080B383 /* NewAccountView.swift in Sources */,
-				503670832C3C95080080B383 /* ForgotPasswordView.swift in Sources */,
+				503670832C3C95080080B383 /* ResetPasswordView.swift in Sources */,
 				50CF3ECD2C359E1B0084DD5C /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +470,7 @@
 				DEVELOPMENT_TEAM = NTTNF67PYT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpenseTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +500,7 @@
 				DEVELOPMENT_TEAM = NTTNF67PYT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpenseTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -630,6 +641,14 @@
 				minimumVersion = 10.29.0;
 			};
 		};
+		50E03BD52C3DF0B600EF02F5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -637,6 +656,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5036707B2C3C83FA0080B383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		50E03BD62C3DF0B700EF02F5 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50E03BD52C3DF0B600EF02F5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		50E03BE52C3E027700EF02F5 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50E03BD52C3DF0B600EF02F5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
