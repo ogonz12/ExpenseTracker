@@ -45,5 +45,5 @@ struct TransactionCardView: View {
 }
 
 #Preview {
-    TransactionCardView(transaction: TransactionStore().transactions[0])
+    HomePage()
 }

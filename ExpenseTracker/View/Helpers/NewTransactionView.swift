@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct NewTransactionView: View {
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var title: String = ""
     @State private var remarks: String = ""
-    @State private var amount: Double = 0.0
-    @State private var dateAdded: Date = Date.now
+    @State private var amount: Double = .zero
+    @State private var dateAdded: Date = .now
     @State private var category: Category = .expense
     @State private var tintColor: TintColor = tints.randomElement()!
     
-    @Binding var showSheet: Bool
     
     var body: some View {
         NavigationStack {
@@ -39,31 +41,23 @@ struct NewTransactionView: View {
                     }
                     
                     Button(action: {
-                                        let newTransaction = Transaction(
-                                            title: title,
-                                            remarks: remarks,
-                                            amount: amount,
-                                            dateAdded: dateAdded,
-                                            category: category,
-                                            tintColor: tintColor
-                                        )
-                        TransactionStore().transactions.append(newTransaction)
-                        showSheet = false
+                        let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tintColor)
+                        context.insert(transaction)
+                        dismiss()
                         
-                                    }) {
-                                        Text("Add Transaction")
-                                            .frame(maxWidth: .infinity)
-                                            .padding()
-                                            .background(Color.blue)
-                                            .foregroundColor(.white)
-                                            .cornerRadius(8)
-                                    }
+                    }) {
+                        Text("Add Transaction")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
                 }
             }
         }
     }
 }
-
 
 
 #Preview {

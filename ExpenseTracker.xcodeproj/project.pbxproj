@@ -33,7 +33,6 @@
 		70E1E5BB2C4AAC0C00D5E707 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5BA2C4AAC0C00D5E707 /* SettingsView.swift */; };
 		70E1E5BD2C4AAC2700D5E707 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5BC2C4AAC2700D5E707 /* ChartsView.swift */; };
 		70E1E5BF2C4AAD9F00D5E707 /* NewTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5BE2C4AAD9F00D5E707 /* NewTransactionView.swift */; };
-		70E1E5C12C4AB6E100D5E707 /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5C02C4AB6E100D5E707 /* TransactionStore.swift */; };
 		70E1E5C32C4AC56B00D5E707 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5C22C4AC56B00D5E707 /* NumberFormatter.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +81,6 @@
 		70E1E5BA2C4AAC0C00D5E707 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		70E1E5BC2C4AAC2700D5E707 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		70E1E5BE2C4AAD9F00D5E707 /* NewTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionView.swift; sourceTree = "<group>"; };
-		70E1E5C02C4AB6E100D5E707 /* TransactionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStore.swift; sourceTree = "<group>"; };
 		70E1E5C22C4AC56B00D5E707 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +119,6 @@
 				70E1E5B22C4AA64000D5E707 /* Category.swift */,
 				70E1E5B62C4AA66D00D5E707 /* TintColor.swift */,
 				70E1E5B42C4AA65800D5E707 /* Transaction.swift */,
-				70E1E5C02C4AB6E100D5E707 /* TransactionStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,7 +379,6 @@
 				70E1E5A72C4A9EBD00D5E707 /* Constants.swift in Sources */,
 				503670832C3C95080080B383 /* ResetPasswordView.swift in Sources */,
 				70E1E5BD2C4AAC2700D5E707 /* ChartsView.swift in Sources */,
-				70E1E5C12C4AB6E100D5E707 /* TransactionStore.swift in Sources */,
 				70E1E59C2C4A906500D5E707 /* CardView.swift in Sources */,
 				70E1E5BF2C4AAD9F00D5E707 /* NewTransactionView.swift in Sources */,
 				70E1E5A12C4A92B100D5E707 /* View+Extensions.swift in Sources */,

@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct HomeView: View {
     
     @State private var selectedCategory: Category = .expense
-    @State private var showBottomSheet = false
     @Namespace private var animation
     
+    @Query(sort: [SortDescriptor(\Transaction.dateAdded, order: .reverse)], animation: .snappy) private var transactions: [Transaction]
     
     var body: some View {
         
@@ -26,27 +27,25 @@ struct HomeView: View {
                         CustomSegmentedControl()
                             .padding(.bottom, 10)
                         
-                        ForEach(TransactionStore().transactions.filter({ $0.category == selectedCategory.rawValue })) { transaction in
-                            TransactionCardView(transaction: transaction)
-                                .animation(.none, value: selectedCategory)
+                        ForEach(transactions) {
+                            TransactionCardView(transaction: $0)
                         }
+                        
                     } header: {
                         HStack {
                             Text("Welcome!")
                                 .font(.title.bold())
                             Spacer()
                             
-                            Button(action: {
-                                withAnimation {
-                                    showBottomSheet.toggle()
-                                }
-                            }) {
+                            NavigationLink {
+                                NewTransactionView()
+                            } label: {
                                 Image(systemName: "plus")
                                     .font(.title3)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
                                     .frame(width: 45, height: 45)
-                                    .background(.blue.gradient, in: .circle)
+                                    .background(appTint.gradient, in: .circle)
                                     .contentShape(.circle)
                             }
                         }
@@ -56,10 +55,6 @@ struct HomeView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(16)
             .background(.gray.opacity(0.15))
-            .overlay(
-                BottomSheetView(show: $showBottomSheet) {
-                    NewTransactionView(showSheet: $showBottomSheet)
-                })
 
         }
         // VStack
@@ -90,42 +85,6 @@ struct HomeView: View {
         }
         .background(.gray.opacity(0.15), in: .capsule)
         .padding(.top, 5)
-    }
-}
-
-struct BottomSheetView<Content: View>: View {
-    @Binding var show: Bool
-    let content: Content
-    
-    init(show: Binding<Bool>, @ViewBuilder content: () -> Content) {
-        self._show = show
-        self.content = content()
-    }
-    
-    var body: some View {
-        GeometryReader { geometry in
-            VStack {
-                Spacer()
-                VStack {
-                    content
-                }
-                .frame(width: geometry.size.width, height: geometry.size.height * 0.9)
-                .background(Color.white)
-                .cornerRadius(16)
-                .shadow(radius: 10)
-                .offset(y: show ? 0 : geometry.size.height)
-                .gesture(
-                    DragGesture()
-                        .onChanged { value in
-                            if value.translation.height > 0 {
-                                withAnimation {
-                                    show = false
-                                }
-                            }
-                        })
-            }
-        }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

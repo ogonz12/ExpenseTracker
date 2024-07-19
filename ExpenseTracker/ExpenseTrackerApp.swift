@@ -17,6 +17,7 @@ struct ExpenseTrackerApp: App {
         WindowGroup {
             LoginPage()
         }
+        .modelContainer(for: [Transaction.self])
     }
 }
 
