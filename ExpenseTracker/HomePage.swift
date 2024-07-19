@@ -16,10 +16,10 @@ struct HomePage: View {
             HomeView()
                 .tag(Tab.home)
                 .tabItem { Tab.home.tabContent }
-            Text("Chart")
+            ChartsView()
                 .tag(Tab.charts)
                 .tabItem { Tab.charts.tabContent }
-            Text("Settings")
+            SettingsView()
                 .tag(Tab.settings)
                 .tabItem { Tab.settings.tabContent }
         }

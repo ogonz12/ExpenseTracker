@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Custom Tint Colors For Transaction Row
-struct TintColor: Identifiable {
+struct TintColor: Identifiable, Hashable{
     let id: UUID = .init()
     var color: String
     var value: Color

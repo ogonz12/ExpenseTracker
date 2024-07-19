@@ -30,6 +30,11 @@
 		70E1E5B32C4AA64000D5E707 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5B22C4AA64000D5E707 /* Category.swift */; };
 		70E1E5B52C4AA65800D5E707 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5B42C4AA65800D5E707 /* Transaction.swift */; };
 		70E1E5B72C4AA66D00D5E707 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5B62C4AA66D00D5E707 /* TintColor.swift */; };
+		70E1E5BB2C4AAC0C00D5E707 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5BA2C4AAC0C00D5E707 /* SettingsView.swift */; };
+		70E1E5BD2C4AAC2700D5E707 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5BC2C4AAC2700D5E707 /* ChartsView.swift */; };
+		70E1E5BF2C4AAD9F00D5E707 /* NewTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5BE2C4AAD9F00D5E707 /* NewTransactionView.swift */; };
+		70E1E5C12C4AB6E100D5E707 /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5C02C4AB6E100D5E707 /* TransactionStore.swift */; };
+		70E1E5C32C4AC56B00D5E707 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5C22C4AC56B00D5E707 /* NumberFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		70E1E5B22C4AA64000D5E707 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		70E1E5B42C4AA65800D5E707 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		70E1E5B62C4AA66D00D5E707 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
+		70E1E5BA2C4AAC0C00D5E707 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		70E1E5BC2C4AAC2700D5E707 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		70E1E5BE2C4AAD9F00D5E707 /* NewTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionView.swift; sourceTree = "<group>"; };
+		70E1E5C02C4AB6E100D5E707 /* TransactionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStore.swift; sourceTree = "<group>"; };
+		70E1E5C22C4AC56B00D5E707 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +119,9 @@
 			children = (
 				503670772C3C7CE20080B383 /* Tabs.swift */,
 				70E1E5B22C4AA64000D5E707 /* Category.swift */,
-				70E1E5B42C4AA65800D5E707 /* Transaction.swift */,
 				70E1E5B62C4AA66D00D5E707 /* TintColor.swift */,
+				70E1E5B42C4AA65800D5E707 /* Transaction.swift */,
+				70E1E5C02C4AB6E100D5E707 /* TransactionStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,11 +151,11 @@
 			children = (
 				70E1E59F2C4A929300D5E707 /* Helpers */,
 				70E1E5982C4A8BE000D5E707 /* View */,
-				50E03BD82C3DF0ED00EF02F5 /* Info.plist */,
 				50CF3ECC2C359E1B0084DD5C /* ExpenseTrackerApp.swift */,
 				50CF3ECE2C359E1B0084DD5C /* HomePage.swift */,
-				50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */,
 				503670742C3C7CA20080B383 /* Model */,
+				50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */,
+				50E03BD82C3DF0ED00EF02F5 /* Info.plist */,
 				50CF3ED02C359E1B0084DD5C /* Assets.xcassets */,
 				50CF3ED22C359E1B0084DD5C /* Preview Content */,
 			);
@@ -179,12 +190,8 @@
 		70E1E5982C4A8BE000D5E707 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				503670802C3C86F50080B383 /* NewAccountView.swift */,
-				503670792C3C80C10080B383 /* LoginPage.swift */,
-				503670822C3C95080080B383 /* ResetPasswordView.swift */,
-				70E1E5992C4A8C8800D5E707 /* HomeView.swift */,
-				70E1E59B2C4A906500D5E707 /* CardView.swift */,
-				70E1E5AE2C4AA18000D5E707 /* TransactionCardView.swift */,
+				70E1E5B92C4AAB9100D5E707 /* TabsView */,
+				70E1E5B82C4AA88000D5E707 /* Helpers */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,8 +201,32 @@
 			children = (
 				70E1E5A62C4A9EBD00D5E707 /* Constants.swift */,
 				70E1E5A02C4A92B100D5E707 /* View+Extensions.swift */,
+				70E1E5C22C4AC56B00D5E707 /* NumberFormatter.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		70E1E5B82C4AA88000D5E707 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				70E1E5AE2C4AA18000D5E707 /* TransactionCardView.swift */,
+				70E1E59B2C4A906500D5E707 /* CardView.swift */,
+				503670822C3C95080080B383 /* ResetPasswordView.swift */,
+				503670792C3C80C10080B383 /* LoginPage.swift */,
+				503670802C3C86F50080B383 /* NewAccountView.swift */,
+				70E1E5BE2C4AAD9F00D5E707 /* NewTransactionView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		70E1E5B92C4AAB9100D5E707 /* TabsView */ = {
+			isa = PBXGroup;
+			children = (
+				70E1E5992C4A8C8800D5E707 /* HomeView.swift */,
+				70E1E5BA2C4AAC0C00D5E707 /* SettingsView.swift */,
+				70E1E5BC2C4AAC2700D5E707 /* ChartsView.swift */,
+			);
+			path = TabsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,8 +369,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E1E5BB2C4AAC0C00D5E707 /* SettingsView.swift in Sources */,
 				70E1E5B72C4AA66D00D5E707 /* TintColor.swift in Sources */,
 				5036707A2C3C80C10080B383 /* LoginPage.swift in Sources */,
+				70E1E5C32C4AC56B00D5E707 /* NumberFormatter.swift in Sources */,
 				70E1E59A2C4A8C8800D5E707 /* HomeView.swift in Sources */,
 				503670782C3C7CE20080B383 /* Tabs.swift in Sources */,
 				50CF3ECF2C359E1B0084DD5C /* HomePage.swift in Sources */,
@@ -348,7 +381,10 @@
 				503670812C3C86F50080B383 /* NewAccountView.swift in Sources */,
 				70E1E5A72C4A9EBD00D5E707 /* Constants.swift in Sources */,
 				503670832C3C95080080B383 /* ResetPasswordView.swift in Sources */,
+				70E1E5BD2C4AAC2700D5E707 /* ChartsView.swift in Sources */,
+				70E1E5C12C4AB6E100D5E707 /* TransactionStore.swift in Sources */,
 				70E1E59C2C4A906500D5E707 /* CardView.swift in Sources */,
+				70E1E5BF2C4AAD9F00D5E707 /* NewTransactionView.swift in Sources */,
 				70E1E5A12C4A92B100D5E707 /* View+Extensions.swift in Sources */,
 				50CF3ECD2C359E1B0084DD5C /* ExpenseTrackerApp.swift in Sources */,
 				70E1E5B32C4AA64000D5E707 /* Category.swift in Sources */,

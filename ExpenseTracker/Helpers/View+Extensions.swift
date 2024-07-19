@@ -16,4 +16,11 @@ extension View {
         
         return formatter.string(from: .init(value: value)) ?? ""
     }
+    
+    func format(date: Date, format: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: date)
+    }
+    
 }
