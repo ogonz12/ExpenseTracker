@@ -9,16 +9,13 @@ import SwiftUI
 
 struct HomePage: View {
     @AppStorage("isFirstTime") private var isFirstTime: Bool = true
-    @State private var activeTab: Tab = .recents
+    @State private var activeTab: Tab = .home
     
     var body: some View {
         TabView(selection: $activeTab){
-            Text("RecentsAD")
-                .tag(Tab.recents)
-                .tabItem { Tab.recents.tabContent }
-            Text("Search")
-                .tag(Tab.search)
-                .tabItem { Tab.search.tabContent }
+            HomeView()
+                .tag(Tab.home)
+                .tabItem { Tab.home.tabContent }
             Text("Chart")
                 .tag(Tab.charts)
                 .tabItem { Tab.charts.tabContent }

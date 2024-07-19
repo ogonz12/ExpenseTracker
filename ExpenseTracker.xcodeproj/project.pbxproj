@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		503670782C3C7CE20080B383 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670772C3C7CE20080B383 /* Model.swift */; };
+		503670782C3C7CE20080B383 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670772C3C7CE20080B383 /* Tabs.swift */; };
 		5036707A2C3C80C10080B383 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670792C3C80C10080B383 /* LoginPage.swift */; };
 		5036707D2C3C84330080B383 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5036707C2C3C84330080B383 /* FirebaseAuth */; };
 		503670812C3C86F50080B383 /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503670802C3C86F50080B383 /* NewAccountView.swift */; };
@@ -22,6 +22,14 @@
 		50E03BD42C3DEDBA00EF02F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */; };
 		50E03BD72C3DF0B700EF02F5 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 50E03BD62C3DF0B700EF02F5 /* GoogleSignIn */; };
 		50E03BE62C3E027700EF02F5 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 50E03BE52C3E027700EF02F5 /* GoogleSignInSwift */; };
+		70E1E59A2C4A8C8800D5E707 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5992C4A8C8800D5E707 /* HomeView.swift */; };
+		70E1E59C2C4A906500D5E707 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E59B2C4A906500D5E707 /* CardView.swift */; };
+		70E1E5A12C4A92B100D5E707 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5A02C4A92B100D5E707 /* View+Extensions.swift */; };
+		70E1E5A72C4A9EBD00D5E707 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5A62C4A9EBD00D5E707 /* Constants.swift */; };
+		70E1E5AB2C4AA11D00D5E707 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5AA2C4AA11D00D5E707 /* Transaction.swift */; };
+		70E1E5AD2C4AA13A00D5E707 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5AC2C4AA13A00D5E707 /* Category.swift */; };
+		70E1E5AF2C4AA18000D5E707 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5AE2C4AA18000D5E707 /* TransactionCardView.swift */; };
+		70E1E5B12C4AA25900D5E707 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5B02C4AA25900D5E707 /* TintColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		503670772C3C7CE20080B383 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		503670772C3C7CE20080B383 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		503670792C3C80C10080B383 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		503670802C3C86F50080B383 /* NewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
 		503670822C3C95080080B383 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
@@ -58,6 +66,14 @@
 		50CF3EE92C359E1C0084DD5C /* ExpenseTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50E03BD82C3DF0ED00EF02F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		70E1E5992C4A8C8800D5E707 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		70E1E59B2C4A906500D5E707 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		70E1E5A02C4A92B100D5E707 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		70E1E5A62C4A9EBD00D5E707 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		70E1E5AA2C4AA11D00D5E707 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = "../../../../Expense Tracker/Expense Tracker/Model/Transaction.swift"; sourceTree = "<group>"; };
+		70E1E5AC2C4AA13A00D5E707 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = "../../../../Expense Tracker/Expense Tracker/Model/Category.swift"; sourceTree = "<group>"; };
+		70E1E5AE2C4AA18000D5E707 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		70E1E5B02C4AA25900D5E707 /* TintColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TintColor.swift; path = "../../../../Expense Tracker/Expense Tracker/Model/TintColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +107,10 @@
 		503670742C3C7CA20080B383 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				503670772C3C7CE20080B383 /* Model.swift */,
+				503670772C3C7CE20080B383 /* Tabs.swift */,
+				70E1E5AC2C4AA13A00D5E707 /* Category.swift */,
+				70E1E5B02C4AA25900D5E707 /* TintColor.swift */,
+				70E1E5AA2C4AA11D00D5E707 /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,12 +138,11 @@
 		50CF3ECB2C359E1B0084DD5C /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				70E1E59F2C4A929300D5E707 /* Helpers */,
+				70E1E5982C4A8BE000D5E707 /* View */,
 				50E03BD82C3DF0ED00EF02F5 /* Info.plist */,
 				50CF3ECC2C359E1B0084DD5C /* ExpenseTrackerApp.swift */,
 				50CF3ECE2C359E1B0084DD5C /* HomePage.swift */,
-				503670802C3C86F50080B383 /* NewAccountView.swift */,
-				503670792C3C80C10080B383 /* LoginPage.swift */,
-				503670822C3C95080080B383 /* ResetPasswordView.swift */,
 				50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */,
 				503670742C3C7CA20080B383 /* Model */,
 				50CF3ED02C359E1B0084DD5C /* Assets.xcassets */,
@@ -156,6 +174,28 @@
 				50CF3EE92C359E1C0084DD5C /* ExpenseTrackerUITestsLaunchTests.swift */,
 			);
 			path = ExpenseTrackerUITests;
+			sourceTree = "<group>";
+		};
+		70E1E5982C4A8BE000D5E707 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				503670802C3C86F50080B383 /* NewAccountView.swift */,
+				503670792C3C80C10080B383 /* LoginPage.swift */,
+				503670822C3C95080080B383 /* ResetPasswordView.swift */,
+				70E1E5992C4A8C8800D5E707 /* HomeView.swift */,
+				70E1E59B2C4A906500D5E707 /* CardView.swift */,
+				70E1E5AE2C4AA18000D5E707 /* TransactionCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70E1E59F2C4A929300D5E707 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				70E1E5A62C4A9EBD00D5E707 /* Constants.swift */,
+				70E1E5A02C4A92B100D5E707 /* View+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,11 +338,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E1E5B12C4AA25900D5E707 /* TintColor.swift in Sources */,
 				5036707A2C3C80C10080B383 /* LoginPage.swift in Sources */,
-				503670782C3C7CE20080B383 /* Model.swift in Sources */,
+				70E1E59A2C4A8C8800D5E707 /* HomeView.swift in Sources */,
+				70E1E5AB2C4AA11D00D5E707 /* Transaction.swift in Sources */,
+				503670782C3C7CE20080B383 /* Tabs.swift in Sources */,
 				50CF3ECF2C359E1B0084DD5C /* HomePage.swift in Sources */,
+				70E1E5AF2C4AA18000D5E707 /* TransactionCardView.swift in Sources */,
 				503670812C3C86F50080B383 /* NewAccountView.swift in Sources */,
+				70E1E5A72C4A9EBD00D5E707 /* Constants.swift in Sources */,
 				503670832C3C95080080B383 /* ResetPasswordView.swift in Sources */,
+				70E1E5AD2C4AA13A00D5E707 /* Category.swift in Sources */,
+				70E1E59C2C4A906500D5E707 /* CardView.swift in Sources */,
+				70E1E5A12C4A92B100D5E707 /* View+Extensions.swift in Sources */,
 				50CF3ECD2C359E1B0084DD5C /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
