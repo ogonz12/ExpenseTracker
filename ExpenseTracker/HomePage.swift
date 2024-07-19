@@ -16,7 +16,7 @@ struct HomePage: View {
             Text("Recents")
                 .tag(Tab.recents)
                 .tabItem { Tab.recents.tabContent }
-            Text("Search,")
+            Text("Search")
                 .tag(Tab.search)
                 .tabItem { Tab.search.tabContent }
             Text("Chart")
