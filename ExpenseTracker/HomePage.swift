@@ -13,7 +13,7 @@ struct HomePage: View {
     
     var body: some View {
         TabView(selection: $activeTab){
-            Text("RecentsAday")
+            Text("RecentsAd")
                 .tag(Tab.recents)
                 .tabItem { Tab.recents.tabContent }
             Text("Search")
