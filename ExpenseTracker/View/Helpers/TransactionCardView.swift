@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct TransactionCardView: View {
+    @Environment(\.modelContext) private var context
     var transaction: Transaction
     
     var body: some View {
@@ -45,5 +47,6 @@ struct TransactionCardView: View {
 }
 
 #Preview {
-    HomePage()
+    //TransactionCardView(transaction: Transaction(title: "Telephone", remarks: "T-Mobile", amount: 120, dateAdded: .now, category: .expense, tintColor: .init(color: "Red", value: .red)))
+    HomeView()
 }

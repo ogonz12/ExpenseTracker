@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct NewTransactionView: View {
     @Environment(\.modelContext) private var context
@@ -16,12 +17,13 @@ struct NewTransactionView: View {
     @State private var amount: Double = .zero
     @State private var dateAdded: Date = .now
     @State private var category: Category = .expense
-    @State private var tintColor: TintColor = tints.randomElement()!
-    
+    @State var tint: TintColor = tints.randomElement()!
+    @State private var showAlert: Bool = false
+    @State private var alertMessage: String = ""
     
     var body: some View {
         NavigationStack {
-            VStack{
+            VStack {
                 
                 Spacer()
                 Text("New Transaction")
@@ -31,7 +33,8 @@ struct NewTransactionView: View {
                     Section(header: Text("Transaction Details")) {
                         TextField("Title", text: $title)
                         TextField("Remarks", text: $remarks)
-                        NumberTextField(value: $amount)
+                        TextField("0.0", value: $amount, formatter: numberFormatter)
+                            .keyboardType(.decimalPad)
                         
                         Picker("Category", selection: $category) {
                             ForEach(Category.allCases, id: \.rawValue) { category in
@@ -40,12 +43,7 @@ struct NewTransactionView: View {
                         }
                     }
                     
-                    Button(action: {
-                        let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tintColor)
-                        context.insert(transaction)
-                        dismiss()
-                        
-                    }) {
+                    Button(action: addTransaction) {
                         Text("Add Transaction")
                             .frame(maxWidth: .infinity)
                             .padding()
@@ -55,7 +53,44 @@ struct NewTransactionView: View {
                     }
                 }
             }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+            }
         }
+    }
+    
+    private func addTransaction() {
+            guard !title.isEmpty else {
+                showAlert(message: "Title cannot be empty")
+                return
+            }
+            
+            guard !remarks.isEmpty else {
+                showAlert(message: "Remarks cannot be empty")
+                return
+            }
+            
+            guard amount > 0 else {
+                showAlert(message: "Amount must be greater than zero")
+                return
+            }
+            
+            let transaction = Transaction(title: title, remarks: remarks, amount: amount, dateAdded: dateAdded, category: category, tintColor: tint)
+            context.insert(transaction)
+            dismiss()
+        }
+        
+    private func showAlert(message: String) {
+        alertMessage = message
+        showAlert = true
+    }
+    
+    var numberFormatter: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        
+        return formatter
     }
 }
 

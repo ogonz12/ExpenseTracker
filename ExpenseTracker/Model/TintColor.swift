@@ -2,7 +2,7 @@
 //  TintColor.swift
 //  Expense Tracker
 //
-//  Created by Balaji Venkatesh on 11/12/23.
+//  Created by Aday Devora on 7/19/24.
 //
 
 import SwiftUI
