@@ -13,10 +13,15 @@ import SwiftData
 @main
 struct ExpenseTrackerApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @AppStorage("isSignedIn") private var isSignedIn: Bool = false
 
     var body: some Scene {
         WindowGroup {
-            LoginPage()
+            if isSignedIn {
+                HomePage()
+            } else {
+                LoginPage()
+            }
         }
         .modelContainer(for: [Transaction.self])
     }
@@ -33,3 +38,4 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         return GIDSignIn.sharedInstance.handle(url)
     }
 }
+

@@ -9,11 +9,10 @@ import SwiftUI
 import Firebase
 import GoogleSignIn
 
-
 struct LoginPage: View {
+    @AppStorage("isSignedIn") private var isSignedIn: Bool = false
     @State private var isCreateAccountViewPresented = false
     @State private var isPasswordResetViewPresented = false
-    @State private var isPasswordCorrect: Bool = false
     @State private var showErrorAlert: Bool = false
 
     @State private var email: String = ""
@@ -90,7 +89,7 @@ struct LoginPage: View {
                                 showErrorAlert.toggle()
                             }
                             if let _ = authResult {
-                                isPasswordCorrect = true
+                                isSignedIn = true
                             }
                         }
                     }) {
@@ -153,10 +152,6 @@ struct LoginPage: View {
                         NewAccountView()
                     }
                 }
-
-                NavigationLink(destination: HomePage(), isActive: $isPasswordCorrect) {
-                    EmptyView()
-                }
             }
             .alert(isPresented: $showErrorAlert) {
                 Alert(title: Text("Login Error"), message: Text("Invalid email or password. Please try again."), dismissButton: .default(Text("OK")))
@@ -194,7 +189,7 @@ struct LoginPage: View {
                     print(error.localizedDescription)
                     return
                 }
-                isPasswordCorrect = true
+                isSignedIn = true
             }
         }
     }
