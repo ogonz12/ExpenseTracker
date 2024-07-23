@@ -63,13 +63,6 @@ struct CardView: View {
             .padding(.top, 15)
         }// ZStack
         
-        
-        
-        
     }
     
-}
-
-#Preview {
-    CardView(income: 2000, expense: 300)
 }

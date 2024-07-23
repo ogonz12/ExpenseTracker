@@ -3,7 +3,7 @@
 //  ExpenseTracker
 //
 //  Created by Aday Devora on 7/19/24.
-//
+//  Modified by Orlando Now Income and Expense reflect on the total balance
 
 import SwiftUI
 import SwiftData

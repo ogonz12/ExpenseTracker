@@ -3,7 +3,7 @@
 //  ExpenseTracker
 //
 //  Created by Aday Devora on 7/19/24.
-//
+//  Modified by Orlando Now Income and Expense reflect on the total balance
 
 import SwiftUI
 import SwiftData
@@ -22,13 +22,13 @@ struct HomeView: View {
                 LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
                     Section {
                         
-                        CardView(income: 2000, expense: 600)
+                        CardView(income: totalIncome(), expense: totalExpense())
                         
                         CustomSegmentedControl()
                             .padding(.bottom, 10)
                         
-                        ForEach(transactions) {
-                            TransactionCardView(transaction: $0)
+                        ForEach(transactions.filter({ $0.category == selectedCategory.rawValue })) { transaction in
+                            TransactionCardView(transaction: transaction)
                         }
                         
                     } header: {
@@ -60,6 +60,13 @@ struct HomeView: View {
         // VStack
     }// NavigationStack
     
+    private func totalIncome() -> Double {
+        transactions.filter { $0.category == Category.income.rawValue }.reduce(0) { $0 + $1.amount }
+    }
+    
+    private func totalExpense() -> Double {
+        transactions.filter { $0.category == Category.expense.rawValue }.reduce(0) { $0 + $1.amount }
+    }
     
     @ViewBuilder
     func CustomSegmentedControl() -> some View {
@@ -87,8 +94,6 @@ struct HomeView: View {
         .padding(.top, 5)
     }
 }
-
-
 #Preview {
     HomePage()
 }
