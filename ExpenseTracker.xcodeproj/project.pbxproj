@@ -22,6 +22,7 @@
 		50E03BD42C3DEDBA00EF02F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */; };
 		50E03BD72C3DF0B700EF02F5 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 50E03BD62C3DF0B700EF02F5 /* GoogleSignIn */; };
 		50E03BE62C3E027700EF02F5 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 50E03BE52C3E027700EF02F5 /* GoogleSignInSwift */; };
+		70C08C3B2C51438500D4A1E5 /* DeleteTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C08C3A2C51438500D4A1E5 /* DeleteTransaction.swift */; };
 		70E1E59A2C4A8C8800D5E707 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5992C4A8C8800D5E707 /* HomeView.swift */; };
 		70E1E59C2C4A906500D5E707 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E59B2C4A906500D5E707 /* CardView.swift */; };
 		70E1E5A12C4A92B100D5E707 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E1E5A02C4A92B100D5E707 /* View+Extensions.swift */; };
@@ -70,6 +71,7 @@
 		50CF3EE92C359E1C0084DD5C /* ExpenseTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		50E03BD32C3DEDBA00EF02F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50E03BD82C3DF0ED00EF02F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		70C08C3A2C51438500D4A1E5 /* DeleteTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTransaction.swift; sourceTree = "<group>"; };
 		70E1E5992C4A8C8800D5E707 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		70E1E59B2C4A906500D5E707 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		70E1E5A02C4A92B100D5E707 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				503670792C3C80C10080B383 /* LoginPage.swift */,
 				503670802C3C86F50080B383 /* NewAccountView.swift */,
 				70E1E5BE2C4AAD9F00D5E707 /* NewTransactionView.swift */,
+				70C08C3A2C51438500D4A1E5 /* DeleteTransaction.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				70E1E5A72C4A9EBD00D5E707 /* Constants.swift in Sources */,
 				503670832C3C95080080B383 /* ResetPasswordView.swift in Sources */,
 				70E1E5BD2C4AAC2700D5E707 /* ChartsView.swift in Sources */,
+				70C08C3B2C51438500D4A1E5 /* DeleteTransaction.swift in Sources */,
 				70E1E59C2C4A906500D5E707 /* CardView.swift in Sources */,
 				70E1E5BF2C4AAD9F00D5E707 /* NewTransactionView.swift in Sources */,
 				70E1E5A12C4A92B100D5E707 /* View+Extensions.swift in Sources */,
